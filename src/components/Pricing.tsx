@@ -116,17 +116,18 @@ const Pricing = () => {
                   ))}
                 </div>
 
-                <button
-                <a
-                  href="#contact"
-                  className={`w-full py-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center ${
-                    pkg.popular
-                      ? 'bg-blue-600 hover:bg-blue-700 text-white'
-                      : 'border border-gray-600 hover:border-blue-500 text-white hover:bg-blue-600/10'
-                  }`}
-                >
-                  Book {pkg.name} Package
-                </a>
+                <button>
+                  <a
+                    href="#contact"
+                    className={`w-full py-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center ${
+                      pkg.popular
+                        ? 'bg-blue-600 hover:bg-blue-700 text-white'
+                        : 'border border-gray-600 hover:border-blue-500 text-white hover:bg-blue-600/10'
+                    }`}
+                  >
+                    Book {pkg.name} Package
+                  </a>
+                </button>
               </div>
             );
           })}
