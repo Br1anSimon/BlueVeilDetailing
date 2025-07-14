@@ -55,10 +55,13 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-2 group">
+              <a
+                href="#contact"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 flex items-center justify-center space-x-2 group"
+              >
                 <span>Book Your Service</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-              </button>
+              </a>
               <button className="border border-gray-600 hover:border-blue-500 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200">
                 View Our Work
               </button>

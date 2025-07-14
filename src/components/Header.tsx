@@ -45,9 +45,12 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200">
+            <a
+              href="#contact"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 inline-block"
+            >
               Book Now
-            </button>
+            </a>
           </nav>
 
           {/* Mobile menu button */}
@@ -75,9 +78,13 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200">
+              <a
+                href="#contact"
+                className="block w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Book Now
-              </button>
+              </a>
             </div>
           </div>
         )}
