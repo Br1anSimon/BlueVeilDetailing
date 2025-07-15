@@ -20,7 +20,7 @@ const Services = () => {
     {
       icon: Shield,
       title: 'Paint Correction & Protection',
-      description: 'Advanced decontamination, ceramic coatings and paint protection films to clean and preserve your vehicle\'s finish.',
+      description: 'Advanced decontamination, ceramic coatings and protective films to clean and preserve your vehicle\'s finish.',
       features: ['Ceramic Coating', 'Paint Protection Film', 'UV Protection', 'Clay Bar'],
       image: 'protection'
     },
