@@ -25,7 +25,7 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
     },
     {
       name: 'Premium',
-      price: '$149',
+      price: '$175',
       duration: '4-5 hours',
       description: 'Our most popular package',
       features: [
@@ -50,11 +50,11 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
       description: 'Ultimate protection & restoration',
       features: [
         'Everything in Premium',
-        '~~Paint correction~~',
-        '~~Ceramic coating application~~',
+        'Paint correction',
+        'Ceramic coating application',
         'Headlight restoration',
-        '~~Carpet shampooing~~',
-        'Odor elimination treatment',
+        'Carpet shampooing',
+        
         '90-day protection guarantee',
         'Free maintenance wash'
       ],
