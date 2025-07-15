@@ -30,7 +30,7 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
       description: 'Our most popular package',
       features: [
         'Everything in Essential',
-        '~~Paint decontamination~~',
+        //'~~Paint decontamination~~',
         'Interior deep clean',
         'Leather conditioning',
         '~~Engine bay cleaning~~',
