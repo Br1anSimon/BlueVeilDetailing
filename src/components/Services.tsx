@@ -53,7 +53,7 @@ const Services = () => {
               <div
                 key={index}
                 className={`group bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 ${
-                  service.title === 'Paint Protection' ? 'relative' : ''
+                  service.title === 'Paint Correction & Protection' ? 'relative' : ''
                 }`}
               >
                 {service.title === 'Paint Correction & Protection' && (
