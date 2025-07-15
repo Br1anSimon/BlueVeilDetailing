@@ -7,7 +7,7 @@ const Services = () => {
       icon: Car,
       title: 'Exterior Detailing',
       description: 'Complete exterior wash, wheel and tire cleaning, clear windows, and protective wax application.',
-      features: ['Paint Correction', 'Ceramic Coating', 'Wheel & Tire Care', 'Chrome Polishing'],
+      features: ['Foam Cannon', 'Wheel & Tire Care', 'Window Cleaning' , 'Protective Wax'],
       image: 'exterior'
     },
     {
