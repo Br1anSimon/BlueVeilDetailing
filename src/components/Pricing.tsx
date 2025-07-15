@@ -33,7 +33,7 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
         //'~~Paint decontamination~~',
         'Interior deep clean',
         'Leather conditioning (coming soon)',
-        '~~Engine bay cleaning~~',
+        'Engine bay cleaning (coming soon)',
         'Odor elimination treatment',
         //'~~Paint sealant application~~',
         'Protective Wax Application',
@@ -54,7 +54,6 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
         'Ceramic coating application',
         'Headlight restoration',
         'Carpet shampooing',
-        
         '90-day protection guarantee',
         'Free maintenance wash'
       ],
