@@ -21,7 +21,7 @@ const Hero = () => {
                     <Star key={i} className="h-5 w-5 fill-current" />
                   ))}
                 </div>
-                <span className="text-gray-400">4.9/5 Customer Rating</span>
+                <span className="text-gray-400"></span>
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -84,15 +84,15 @@ const Hero = () => {
             {/* Floating Stats */}
             <div className="absolute -top-4 -right-4 bg-black/80 backdrop-blur-md border border-gray-700 rounded-xl p-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-400">500+</div>
+                <div className="text-2xl font-bold text-blue-400">25+</div>
                 <div className="text-sm text-gray-400">Happy Customers</div>
               </div>
             </div>
             
             <div className="absolute -bottom-4 -left-4 bg-black/80 backdrop-blur-md border border-gray-700 rounded-xl p-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-400">3+</div>
-                <div className="text-sm text-gray-400">Years Experience</div>
+                <div className="text-2xl font-bold text-blue-400">1+</div>
+                <div className="text-sm text-gray-400">Year Experience</div>
               </div>
             </div>
           </div>

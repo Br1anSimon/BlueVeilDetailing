@@ -26,11 +26,11 @@ const Pricing = () => {
       description: 'Our most popular package',
       features: [
         'Everything in Essential',
-        'Paint decontamination',
+        '~~Paint decontamination~~',
         'Interior deep clean',
         'Leather conditioning',
-        'Engine bay cleaning',
-        'Paint sealant application',
+        '~~Engine bay cleaning~~',
+        '~~Paint sealant application~~',
         '30-day protection guarantee'
       ],
       popular: true,
@@ -43,10 +43,10 @@ const Pricing = () => {
       description: 'Ultimate protection & restoration',
       features: [
         'Everything in Premium',
-        'Paint correction',
-        'Ceramic coating application',
+        '~~Paint correction~~',
+        '~~Ceramic coating application~~',
         'Headlight restoration',
-        'Carpet shampooing',
+        '~~Carpet shampooing~~',
         'Odor elimination treatment',
         '90-day protection guarantee',
         'Free maintenance wash'
@@ -111,7 +111,13 @@ const Pricing = () => {
                   {pkg.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-3">
                       <Check className="h-5 w-5 text-blue-500 flex-shrink-0" />
-                      <span className="text-gray-300">{feature}</span>
+                      <span className={`${
+                        feature.startsWith('~~') && feature.endsWith('~~') 
+                          ? 'text-gray-500 line-through' 
+                          : 'text-gray-300'
+                      }`}>
+                        {feature.replace(/~~/g, '')}
+                      </span>
                     </div>
                   ))}
                 </div>

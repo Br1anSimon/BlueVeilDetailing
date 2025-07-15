@@ -52,8 +52,18 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="group bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10"
+                className={`group bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 ${
+                  service.title === 'Paint Protection' ? 'relative' : ''
+                }`}
               >
+                {service.title === 'Paint Protection' && (
+                  <div className="absolute inset-0 bg-gray-900/80 rounded-2xl flex items-center justify-center z-10">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-gray-400 mb-2">Coming Soon</div>
+                      <div className="text-gray-500">Advanced services launching soon</div>
+                    </div>
+                  </div>
+                )}
                 <div className="flex items-start space-x-6">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center group-hover:bg-blue-600/30 transition-colors duration-300">
