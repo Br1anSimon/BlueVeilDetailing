@@ -35,6 +35,7 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
         'Leather conditioning',
         '~~Engine bay cleaning~~',
         '~~Paint sealant application~~',
+        'Protective Wax Application',
         '30-day protection guarantee'
       ],
       popular: true,
