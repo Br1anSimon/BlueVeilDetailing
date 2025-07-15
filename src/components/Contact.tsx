@@ -91,7 +91,7 @@ const Contact = ({ selectedService }: ContactProps) => {
     {
       icon: Clock,
       title: 'Hours',
-      details: ['Mon-Fri: 8AM - 2PM', 'Sat-Sun: 9AM - 5PM']
+      details: ['Mon-Fri: 8AM - 2PM', 'Sat-Sun: 9AM - 2PM']
     }
   ];
 
