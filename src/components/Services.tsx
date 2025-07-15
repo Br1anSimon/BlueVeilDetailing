@@ -56,7 +56,7 @@ const Services = () => {
                   service.title === 'Paint Protection' ? 'relative' : ''
                 }`}
               >
-                {service.title === 'Paint Protection & Correction' && (
+                {service.title === 'Paint Correction & Protection' && (
                   <div className="absolute inset-0 bg-gray-900/80 rounded-2xl flex items-center justify-center z-10">
                     <div className="text-center">
                       <div className="text-2xl font-bold text-gray-400 mb-2">Coming Soon</div>
