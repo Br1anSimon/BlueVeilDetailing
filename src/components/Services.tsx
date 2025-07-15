@@ -14,7 +14,7 @@ const Services = () => {
       icon: Sparkles,
       title: 'Interior Detailing',
       description: 'Deep cleaning and conditioning of all interior surfaces, upholstery, and leather care.',
-      features: ['Leather Conditioning', 'Carpet Shampooing', 'Dashboard Care', 'Odor Elimination'],
+      features: ['Interior Vaccum', 'Dashboard Care', 'Windoe cleaning' , 'Odor Elimination'],
       image: 'interior'
     },
     {
