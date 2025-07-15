@@ -79,7 +79,7 @@ const Pricing = () => {
                   pkg.popular
                     ? 'border-blue-500 shadow-blue-500/20 scale-105'
                     : 'border-gray-800 hover:border-blue-500/50'
-                }`}
+                } flex flex-col`}
               >
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -122,10 +122,10 @@ const Pricing = () => {
                   ))}
                 </div>
 
-                <button>
+                <div className="mt-auto">
                   <a
                     href="#contact"
-                    className={`w-full py-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center ${
+                    className={`w-full py-5 px-6 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center ${
                       pkg.popular
                         ? 'bg-blue-600 hover:bg-blue-700 text-white'
                         : 'border border-gray-600 hover:border-blue-500 text-white hover:bg-blue-600/10'
@@ -133,7 +133,7 @@ const Pricing = () => {
                   >
                     Book {pkg.name} Package
                   </a>
-                </button>
+                </div>
               </div>
             );
           })}
