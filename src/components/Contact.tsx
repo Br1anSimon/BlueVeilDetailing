@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
@@ -12,6 +13,20 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  useEffect(() => {
+    // Check for service parameter in URL hash
+    const hash = window.location.hash;
+    if (hash.includes('service=')) {
+      const serviceParam = hash.split('service=')[1];
+      if (serviceParam) {
+        setFormData(prev => ({
+          ...prev,
+          service: serviceParam
+        }));
+      }
+    }
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
