@@ -6,7 +6,7 @@ const Services = () => {
     {
       icon: Car,
       title: 'Exterior Detailing',
-      description: 'Complete exterior wash, clay bar treatment, paint correction, and protective wax application.',
+      description: 'Complete exterior wash, wheel and tire cleaning, clear windows, and protective wax application.',
       features: ['Paint Correction', 'Ceramic Coating', 'Wheel & Tire Care', 'Chrome Polishing'],
       image: 'exterior'
     },
