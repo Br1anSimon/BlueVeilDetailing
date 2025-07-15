@@ -125,7 +125,7 @@ const Pricing = () => {
                 <div className="mt-auto">
                   <a
                     href="#contact"
-                    className={`w-full py-5 px-6 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center ${
+                    className={`w-full py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center ${
                       pkg.popular
                         ? 'bg-blue-600 hover:bg-blue-700 text-white'
                         : 'border border-gray-600 hover:border-blue-500 text-white hover:bg-blue-600/10'
