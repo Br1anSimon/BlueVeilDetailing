@@ -9,7 +9,7 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
   const packages = [
     {
       name: 'Essential',
-      price: '$89',
+      price: '$100',
       duration: '2-3 hours',
       description: 'Perfect for regular maintenance',
       features: [
