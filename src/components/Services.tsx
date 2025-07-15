@@ -19,9 +19,9 @@ const Services = () => {
     },
     {
       icon: Shield,
-      title: 'Paint Protection',
+      title: 'Paint Correction & Protection',
       description: 'Advanced ceramic coatings and paint protection films to preserve your vehicle\'s finish.',
-      features: ['Ceramic Coating', 'Paint Protection Film', 'UV Protection', '5-Year Warranty'],
+      features: ['Ceramic Coating', 'Paint Protection Film', 'UV Protection', 'Clay Bar'],
       image: 'protection'
     },
     {
