@@ -1,7 +1,11 @@
 import React from 'react';
 import { Check, Star, Zap } from 'lucide-react';
 
-const Pricing = () => {
+interface PricingProps {
+  onServiceSelect: (service: string) => void;
+}
+
+const Pricing = ({ onServiceSelect }: PricingProps) => {
   const packages = [
     {
       name: 'Essential',
@@ -123,8 +127,11 @@ const Pricing = () => {
                 </div>
 
                 <div className="mt-auto">
-                  <a
-                    href={`#contact?service=${pkg.name.toLowerCase()}`}
+                  <button
+                    onClick={() => {
+                      onServiceSelect(pkg.name.toLowerCase());
+                      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
                     className={`w-full py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center ${
                       pkg.popular
                         ? 'bg-blue-600 hover:bg-blue-700 text-white'
@@ -132,7 +139,7 @@ const Pricing = () => {
                     }`}
                   >
                     Book {pkg.name} Package
-                  </a>
+                  </button>
                 </div>
               </div>
             );

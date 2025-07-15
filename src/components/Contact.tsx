@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+interface ContactProps {
+  selectedService?: string;
+}
+
+const Contact = ({ selectedService }: ContactProps) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,18 +18,13 @@ const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   useEffect(() => {
-    // Check for service parameter in URL hash
-    const hash = window.location.hash;
-    if (hash.includes('service=')) {
-      const serviceParam = hash.split('service=')[1];
-      if (serviceParam) {
-        setFormData(prev => ({
-          ...prev,
-          service: serviceParam
-        }));
-      }
+    if (selectedService) {
+      setFormData(prev => ({
+        ...prev,
+        service: selectedService
+      }));
     }
-  }, []);
+  }, [selectedService]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
