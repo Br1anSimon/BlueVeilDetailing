@@ -85,8 +85,16 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
                   pkg.popular
                     ? 'border-blue-500 shadow-blue-500/20 scale-105'
                     : 'border-gray-800 hover:border-blue-500/50'
-                } flex flex-col`}
+                } flex flex-col ${pkg.name === 'Elite' ? 'overflow-hidden' : ''}`}
               >
+                {pkg.name === 'Elite' && (
+                  <div className="absolute inset-0 bg-gray-900/80 rounded-2xl flex items-center justify-center z-10">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-gray-400 mb-2">Coming Soon</div>
+                      <div className="text-gray-500">Elite services launching soon</div>
+                    </div>
+                  </div>
+                )}
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <div className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
