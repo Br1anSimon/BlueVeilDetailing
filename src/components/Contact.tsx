@@ -75,12 +75,12 @@ const Contact = ({ selectedService }: ContactProps) => {
     {
       icon: MapPin,
       title: 'Location',
-      details: ['123 Auto Care Lane', 'Detailing District, DD 12345']
+      details: ['117 Side Hill Ct', 'Sugarloaf, PA 18249']
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: ['(555) 123-BLUE', '(555) 123-2583']
+      details: ['(570)-926-7518']
     },
     {
       icon: Mail,
