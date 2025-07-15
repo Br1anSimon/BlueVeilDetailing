@@ -260,7 +260,7 @@ const Contact = ({ selectedService }: ContactProps) => {
                 Call our priority booking line for same-day or emergency detailing services.
               </p>
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200">
-                Call Now: (555) 123-RUSH
+                Call Now: (570)-926-7518
               </button>
             </div>
           </div>
