@@ -32,11 +32,13 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
         'Everything in Essential',
         //'~~Paint decontamination~~',
         'Interior deep clean',
-        'Leather conditioning',
+        'Leather conditioning (coming soon)',
         '~~Engine bay cleaning~~',
-        '~~Paint sealant application~~',
+        'Odor elimination treatment',
+        //'~~Paint sealant application~~',
         'Protective Wax Application',
-        '30-day protection guarantee'
+        '30-day protection guarantee',
+      
       ],
       popular: true,
       icon: Star
