@@ -85,7 +85,8 @@ const Contact = ({ selectedService }: ContactProps) => {
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@blueveildetailing.com', 'booking@blueveildetailing.com']
+      details: ['bsimon2005@gmail.com'
+        'info@blueveildetailing.com']
     },
     {
       icon: Clock,
