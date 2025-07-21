@@ -52,7 +52,7 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
       features: [
         'Everything in Premium',
         'Paint correction',
-        'Engine Bay Cleaning'
+        'Engine Bay Cleaning',
         'Ceramic coating application',
         'Headlight restoration',
         '60-day protection guarantee',
