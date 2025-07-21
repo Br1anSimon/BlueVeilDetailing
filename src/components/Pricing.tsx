@@ -30,14 +30,15 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
       description: 'Our most popular package',
       features: [
         'Everything in Essential',
-        //'~~Paint decontamination~~',
+        'Paint decontamination',
         'Interior deep clean',
-        'Leather conditioning (coming soon)',
-        'Engine bay cleaning (coming soon)',
+        'Carpet Shampooing',
+        'Leather conditioning',
+        //'Engine bay cleaning (coming soon)',
         'Odor elimination treatment',
         //'~~Paint sealant application~~',
-        'Protective Wax Application',
-        '30-day protection guarantee',
+        'Ceramic-Wax Application',
+        //'30-day protection guarantee',
       
       ],
       popular: true,
@@ -51,10 +52,10 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
       features: [
         'Everything in Premium',
         'Paint correction',
+        'Engine Bay Cleaning'
         'Ceramic coating application',
         'Headlight restoration',
-        'Carpet shampooing',
-        '90-day protection guarantee',
+        '60-day protection guarantee',
         'Free maintenance wash'
       ],
       popular: false,
