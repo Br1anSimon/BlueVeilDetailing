@@ -54,7 +54,7 @@ const Pricing = ({ onServiceSelect }: PricingProps) => {
         'Paint correction',
         'Engine Bay Cleaning',
         'Headlight restoration',
-        'Glass sealant application'
+        'Glass sealant application',
         '60-day Protection guarantee',
         'Free maintenance wash'
       ],
