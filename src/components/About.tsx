@@ -102,14 +102,13 @@ const About = () => {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-8 border border-gray-700">
-                <div className="aspect-square bg-gradient-to-br from-blue-900/20 to-blue-600/20 rounded-lg flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-20 h-20 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto">
-                      <Award className="h-10 w-10 text-blue-500" />
-                    </div>
-                    <p className="text-gray-400">Professional Team</p>
-                  </div>
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-4 border border-gray-700">
+                <div className="aspect-square rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Professional car detailing team at work"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
