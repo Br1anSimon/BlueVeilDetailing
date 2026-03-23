@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <Shield className="h-8 w-8 text-blue-500" />
-              <span className="text-xl font-bold text-white">BlueVeil Detailing</span>
+              <span className="text-xl font-bold text-white">Sapphire Shine Detailing</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Premium auto detailing services with uncompromising quality and attention to detail. 
@@ -103,7 +103,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-500 flex-shrink-0" />
-                <p className="text-gray-300">info@blueveildetailing.com</p>
+                <p className="text-gray-300">info@sapphireshine.com</p>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2024 BlueVeil Detailing. All rights reserved.
+              © 2024 Sapphire Shine Detailing. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
