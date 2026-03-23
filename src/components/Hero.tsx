@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Star, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
+import image from '../images/image.png';
+import img from '../images/img.png';
+import img1 from '../images/img_1.png';
+import img2 from '../images/img_2.jpg';
+import img3 from '../images/img_3.jpg';
+import img4 from '../images/img_4.jpg';
+// add as many as you need
 
 const Hero = () => {
-  const showcaseImages = [
-    '/image.png',
-    'https://images.pexels.com/photos/3752169/pexels-photo-3752169.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?auto=compress&cs=tinysrgb&w=800',
-    'https://images.pexels.com/photos/13861/IMG_3496bfree.jpg?auto=compress&cs=tinysrgb&w=800'
+  const showcaseImages = [image, img, img1, img2, img3, img4
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -142,7 +145,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Floating Stats */}
             <div className="absolute -top-4 -right-4 bg-black/80 backdrop-blur-md border border-gray-700 rounded-xl p-4">
               <div className="text-center">
@@ -150,7 +153,7 @@ const Hero = () => {
                 <div className="text-sm text-gray-400">Happy Customers</div>
               </div>
             </div>
-            
+
             <div className="absolute -bottom-4 -left-4 bg-black/80 backdrop-blur-md border border-gray-700 rounded-xl p-4">
               <div className="text-center">
                 <div className="text-2xl font-bold text-blue-400">1+</div>
