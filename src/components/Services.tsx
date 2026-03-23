@@ -8,28 +8,28 @@ const Services = () => {
       title: 'Exterior Detailing',
       description: 'Complete exterior wash, wheel and tire cleaning, clear windows, and protective wax application.',
       features: ['Foam Cannon', 'Wheel & Tire Care', 'Window Cleaning' , 'Protective Wax'],
-      image: 'https://images.pexels.com/photos/3767673/pexels-photo-3767673.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: 'https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       icon: Sparkles,
       title: 'Interior Detailing',
       description: 'Deep cleaning and conditioning of all interior surfaces, upholstery, and trim .',
       features: ['Interior Vaccum', 'Dashboard Care', 'Window Cleaning' , 'Odor Elimination'],
-      image: 'https://images.pexels.com/photos/6873050/pexels-photo-6873050.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: 'https://images.pexels.com/photos/6872448/pexels-photo-6872448.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       icon: Shield,
       title: 'Paint Correction & Protection',
       description: 'Advanced decontamination, ceramic coatings and protective films to clean and preserve your vehicle\'s finish.',
       features: ['Ceramic Coating', 'Paint Protection Film', 'UV Protection', 'Clay Bar'],
-      image: 'https://images.pexels.com/photos/3832857/pexels-photo-3832857.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: 'https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?auto=compress&cs=tinysrgb&w=800'
     },
     {
       icon: Clock,
       title: 'Express Services',
       description: 'Quick turnaround services for busy schedules without compromising on quality.',
       features: ['Quick Wash', 'Interior Refresh', 'Tire Shine', 'Same Day Service'],
-      image: 'https://images.pexels.com/photos/6872448/pexels-photo-6872448.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: 'https://images.pexels.com/photos/13861/IMG_3496bfree.jpg?auto=compress&cs=tinysrgb&w=800'
     }
   ];
 

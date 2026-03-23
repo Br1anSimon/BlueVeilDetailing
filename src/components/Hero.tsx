@@ -3,9 +3,9 @@ import { ArrowRight, Star, CheckCircle, ChevronLeft, ChevronRight } from 'lucide
 import image from '../images/image.png';
 import img from '../images/img.png';
 import img1 from '../images/img_1.png';
-import img2 from '../images/img_2.jpg';
-import img3 from '../images/img_3.jpg';
-import img4 from '../images/img_4.jpg';
+import img2 from '../images/img_2.png';
+import img3 from '../images/img_3.png';
+import img4 from '../images/img_4.png';
 // add as many as you need
 
 const Hero = () => {
