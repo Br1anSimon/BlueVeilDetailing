@@ -1,7 +1,34 @@
-import React from 'react';
-import { ArrowRight, Star, CheckCircle } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { ArrowRight, Star, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Hero = () => {
+  const showcaseImages = [
+    '/image.png',
+    'https://images.pexels.com/photos/3752169/pexels-photo-3752169.jpeg?auto=compress&cs=tinysrgb&w=800',
+    'https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?auto=compress&cs=tinysrgb&w=800',
+    'https://images.pexels.com/photos/13861/IMG_3496bfree.jpg?auto=compress&cs=tinysrgb&w=800'
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % showcaseImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % showcaseImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? showcaseImages.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden">
       {/* Background Pattern */}
@@ -23,7 +50,7 @@ const Hero = () => {
                 </div>
                 <span className="text-gray-400"></span>
               </div>
-              
+
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 Premium Auto
                 <span className="text-blue-500"> Detailing</span>
@@ -32,9 +59,9 @@ const Hero = () => {
                   Redefined
                 </span>
               </h1>
-              
+
               <p className="text-xl text-gray-300 leading-relaxed">
-                Experience unparalleled precision and care for your vehicle. Our expert team delivers 
+                Experience unparalleled precision and care for your vehicle. Our expert team delivers
                 exceptional interior and exterior detailing services that restore your car's beauty and protect its value.
               </p>
             </div>
@@ -68,15 +95,51 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Hero Image */}
+          {/* Right Content - Slideshow */}
           <div className="relative">
             <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-4 border border-gray-700">
-              <div className="aspect-square rounded-xl overflow-hidden">
-                <img
-                  src="https://images.pexels.com/photos/3752169/pexels-photo-3752169.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Luxury car detailing showcase"
-                  className="w-full h-full object-cover"
-                />
+              <div className="aspect-square rounded-xl overflow-hidden relative group">
+                {showcaseImages.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    alt={`Vehicle detailing showcase ${index + 1}`}
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                      index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                    }`}
+                  />
+                ))}
+
+                <button
+                  onClick={prevImage}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft className="h-6 w-6" />
+                </button>
+
+                <button
+                  onClick={nextImage}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10"
+                  aria-label="Next image"
+                >
+                  <ChevronRight className="h-6 w-6" />
+                </button>
+
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+                  {showcaseImages.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentImageIndex(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        index === currentImageIndex
+                          ? 'bg-blue-500 w-8'
+                          : 'bg-white/50 hover:bg-white/75'
+                      }`}
+                      aria-label={`Go to image ${index + 1}`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
             
