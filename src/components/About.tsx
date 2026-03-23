@@ -32,7 +32,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Why Choose <span className="text-blue-500">BlueVeil</span>
+            Why Choose <span className="text-blue-500">Sapphire Shine</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             We're not just another detailing service. We're passionate professionals dedicated to 
@@ -82,8 +82,8 @@ const About = () => {
               <h3 className="text-3xl font-bold text-white mb-6">Our Story</h3>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  BlueVeil Detailing was born from a passion for automotive excellence and a commitment 
-                  to providing unparalleled service quality. What started as a small operation has grown 
+                  Sapphire Shine Detailing was born from a passion for automotive excellence and a commitment
+                  to providing unparalleled service quality. What started as a small operation has grown
                   into a trusted name in premium vehicle care.
                 </p>
                 <p>
