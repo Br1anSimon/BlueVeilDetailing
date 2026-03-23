@@ -6,10 +6,11 @@ import img1 from '../images/img_1.png';
 import img2 from '../images/img_2.png';
 import img3 from '../images/img_3.png';
 import img4 from '../images/img_4.png';
-// add as many as you need
+import frontBeforeAfter from '../images/front_before_after_1620x2160.png';
+import beforeAfter from '../images/before_after_1620x2160.png';
 
 const Hero = () => {
-  const showcaseImages = [image, img, img1, img2, img3, img4
+  const showcaseImages = [image, img, img1, img2, img3, img4, frontBeforeAfter, beforeAfter
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
